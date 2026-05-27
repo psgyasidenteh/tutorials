@@ -1,6 +1,140 @@
 ---
-export const title = 'About';
+import Layout from '../layouts/Layout.astro';
+
+export const title = 'About | Prince Sugar Gyasi-Denteh';
 ---
 
-<h1>About Me</h1>
-<h2>... and my new Astro site!</h2>
+<Layout title={title}>
+  <div class="about-container">
+    <!-- Professional Summary -->
+    <section class="about-section">
+      <h1>About Me</h1>
+      <div class="professional-summary">
+        <h2>Professional Summary</h2>
+        <p>Final-year Chemical Engineering student at KNUST (graduating 2026) with hands-on industrial experience in food and agribusiness processing, process simulation, and quality operations. Demonstrated ability to apply engineering principles in fast-paced production environments, with a strong track record in analytical problem-solving, operational testing, and process modelling.</p>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="about-section">
+      <h2>Work Experience</h2>
+      
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Student Intern – Quality & Industrial Operations</h3>
+          <span class="date">Dec 2024 – Jan 2025</span>
+        </div>
+        <p class="company">Cocoa Touton Processing Company, Tema, Ghana</p>
+        <ul>
+          <li>Conducted physicochemical testing of cocoa mass (FFA content, moisture, fat content) on a tri-hourly cycle to ensure product consistency in a large-scale processing facility</li>
+          <li>Performed bean quality analysis including shell-in-nibs analysis, bean count, cut tests, and winnower analysis</li>
+          <li>Carried out microbial safety testing of cocoa mass (Salmonella, coliform, enterobacteria, total plate count)</li>
+          <li>Gained exposure to industrial plant operations, processing workflows, and quality assurance protocols</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Research Intern – Process Simulation</h3>
+          <span class="date">Sep – Dec 2025</span>
+        </div>
+        <p class="company">Bundesanstalt für Materialforschung und-Prüfung (BAM), Berlin, Germany</p>
+        <ul>
+          <li>Designed and implemented a computer-aided molecular design framework using distributed evolutionary algorithms (Python / DEAP) for optimising industrial refrigerant selection</li>
+          <li>Built predictive property models using multilinear regression and machine learning</li>
+          <li>Designed modular Python scripts to interface with industrial thermodynamic engines</li>
+          <li>Conducted multi-objective optimisation studies for complex technical problems</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Student Intern – Chemical Engineering</h3>
+          <span class="date">Oct 2024</span>
+        </div>
+        <p class="company">Department of Chemical Engineering, KNUST, Kumasi, Ghana</p>
+        <ul>
+          <li>Developed a kinetic model for naphtha cracking comprising 22 reactions</li>
+          <li>Applied mole and energy balance calculations across a Plug Flow Reactor (PFR)</li>
+          <li>Performed dimensional analysis to validate kinetic and thermodynamic data</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="about-section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>BSc Chemical Engineering</h3>
+        <p class="company">Kwame Nkrumah University of Science and Technology (KNUST)</p>
+        <span class="date">Nov 2022 – Nov 2026</span>
+        <div class="education-details">
+          <p><strong>Relevant Coursework:</strong> Process Design & Economics, Thermodynamics I & II, Reaction Engineering, Process Control, Fluid Mechanics, Heat & Mass Transfer, Industrial Safety</p>
+          <p><strong>Final-year Project:</strong> Design of a Poly-Aluminium Chloride (PAC) production facility from Ghanaian bauxite — full Aspen Plus simulation, detailed PFD development, and economic evaluation</p>
+          <p><strong>Other Projects:</strong></p>
+          <ul>
+            <li>Vapour-Liquid Equilibrium modelling of binary mixtures using MATLAB</li>
+            <li>Brayton Cycle simulation using MATLAB for power generation systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Memberships -->
+    <section class="about-section">
+      <h2>Leadership & Professional Memberships</h2>
+      
+      <div class="leadership-item">
+        <h3>President, Chemical Engineering Student Association (CHEESA)</h3>
+        <span class="date">Sep 2024 – Sep 2025</span>
+        <p>Led a large student body with strategic vision, coordinating academic excellence programs and professional development initiatives</p>
+      </div>
+
+      <div class="leadership-item">
+        <h3>President, GHANASS Old Students' Association – KNUST (GOSA-KNUST)</h3>
+        <span class="date">Sep 2024 – Present</span>
+        <p>Spearheaded first official in-person executive meeting; initiated freshers' outreach, social media presence, and alumni networking strategies</p>
+      </div>
+
+      <div class="leadership-item">
+        <h3>International Student Member – American Institute of Chemical Engineers (AIChE)</h3>
+        <span class="date">Sep 2024 – Present</span>
+      </div>
+
+      <div class="leadership-item">
+        <h3>Member – Youth in Engineering, Ghana Institute of Engineers (YE-GhIE)</h3>
+        <span class="date">Apr 2025 – Present</span>
+      </div>
+
+      <div class="leadership-item">
+        <h3>Member – The Modelling Club, KNUST</h3>
+        <span class="date">Feb 2024 – Present</span>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="about-section">
+      <h2>Languages</h2>
+      <div class="languages">
+        <div class="language-item">
+          <span class="language-name">English</span>
+          <span class="language-level">Native / Mother tongue</span>
+        </div>
+        <div class="language-item">
+          <span class="language-name">Twi</span>
+          <span class="language-level">Proficient (C2)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reference -->
+    <section class="about-section reference-section">
+      <h2>Reference</h2>
+      <div class="reference-card">
+        <h3>Dr. Jude Kweku Bonsu</h3>
+        <p>Lecturer and Project Supervisor, Department of Chemical Engineering, KNUST</p>
+        <p><a href="mailto:chemicalagile@gmail.com">chemicalagile@gmail.com</a> | <a href="tel:+233543639520">(+233) 543639520</a></p>
+      </div>
+    </section>
+  </div>
+</Layout>

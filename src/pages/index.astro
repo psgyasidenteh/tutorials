@@ -1,6 +1,58 @@
 ---
-export const title = 'Home';
+import Layout from '../layouts/Layout.astro';
+
+export const title = 'Prince Sugar Gyasi-Denteh | Portfolio';
 ---
 
-<h1>My Astro Site</h1>
-<p>Curious to see where this goes</p>
+<Layout title={title}>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Prince Sugar Gyasi-Denteh</h1>
+      <p class="hero-subtitle">Chemical Engineer | Process Simulation | Industrial Operations</p>
+      <p class="hero-description">Final-year Chemical Engineering student at KNUST with hands-on industrial experience in food processing, process simulation, and quality operations.</p>
+      <div class="hero-buttons">
+        <a href="/about/" class="btn btn-primary">View My Work</a>
+        <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
+      </div>
+      <div class="contact-info">
+        <span>📍 Apam, Ghana</span>
+        <span>📧 psgyasi@gmail.com</span>
+        <span>📱 +233 504511403</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights">
+    <h2>Professional Highlights</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <h3>🏢 Industrial Experience</h3>
+        <p>Hands-on experience at Cocoa Touton Processing Company and BAM Berlin in quality operations, process simulation, and industrial workflows.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🔬 Technical Skills</h3>
+        <p>Proficient in Aspen Plus, HYSYS, Python, MATLAB, AutoCAD, and specialized lab testing protocols.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🎓 Academic Excellence</h3>
+        <p>Final-year BSc Chemical Engineering with specialization in process design, thermodynamics, and reaction engineering.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>👥 Leadership</h3>
+        <p>President of Chemical Engineering Student Association (CHEESA) and GHANASS Old Students' Association at KNUST.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <h2>Let's Work Together</h2>
+    <p>Interested in collaborating or learning more about my work? Reach out to me!</p>
+    <div class="cta-buttons">
+      <a href="/contact/" class="btn btn-primary">Get in Touch</a>
+      <a href="https://linkedin.com/in/prince-sugar-gyasi-denteh" target="_blank" class="btn btn-secondary">LinkedIn</a>
+    </div>
+  </section>
+</Layout>

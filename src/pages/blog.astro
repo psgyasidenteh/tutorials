@@ -1,6 +1,142 @@
 ---
-export const title = 'Blog';
+import Layout from '../layouts/Layout.astro';
+
+export const title = 'Blog | Prince Sugar Gyasi-Denteh';
 ---
 
-<h1>My Astro Learning Blog</h1>
-<p>This is where I will post about my journey learning Astro.</p>
+<Layout title={title}>
+  <div class="blog-container">
+    <h1>Engineering & Technical Blog</h1>
+    <p class="intro-text">Insights, learnings, and discussions on chemical engineering, process simulation, and industrial operations.</p>
+
+    <div class="coming-soon">
+      <div class="coming-soon-content">
+        <h2>Coming Soon</h2>
+        <p>I'm currently working on publishing articles about:</p>
+        <ul>
+          <li>Process Simulation and Modelling Best Practices</li>
+          <li>Industrial Quality Assurance in Food Processing</li>
+          <li>Molecular Design Optimization Techniques</li>
+          <li>Chemical Engineering Project Walkthroughs</li>
+          <li>Career Development in Engineering</li>
+        </ul>
+        <p>Check back soon for detailed technical posts and case studies!</p>
+        <a href="/contact/" class="btn btn-primary">Notify Me When Posts Are Published</a>
+      </div>
+    </div>
+
+    <div class="featured-section">
+      <h2>Featured Resources</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <h3>📚 My Projects</h3>
+          <p>Explore detailed technical projects including process simulation, kinetic modelling, and industrial applications.</p>
+          <a href="/projects/" class="btn btn-secondary">View Projects</a>
+        </div>
+        <div class="resource-card">
+          <h3>🛠️ Technical Skills</h3>
+          <p>Learn about the tools, software, and methodologies I use in chemical engineering and research.</p>
+          <a href="/skills/" class="btn btn-secondary">Explore Skills</a>
+        </div>
+        <div class="resource-card">
+          <h3>👤 About Me</h3>
+          <p>Read more about my background, experience, and career journey in chemical engineering.</p>
+          <a href="/about/" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .blog-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .intro-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-3xl);
+    text-align: center;
+  }
+
+  .coming-soon {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+    text-align: center;
+  }
+
+  .coming-soon-content h2 {
+    color: var(--color-primary);
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .coming-soon-content p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-secondary);
+  }
+
+  .coming-soon-content ul {
+    list-style-position: inside;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-lg);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .coming-soon-content li {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .featured-section {
+    margin-top: var(--spacing-3xl);
+  }
+
+  .featured-section h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-primary);
+  }
+
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .resource-card {
+    background: var(--color-surface);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .resource-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .resource-card p {
+    flex-grow: 1;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .resource-card .btn {
+    align-self: flex-start;
+  }
+</style>

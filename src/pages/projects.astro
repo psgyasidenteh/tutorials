@@ -1,0 +1,219 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+export const title = 'Projects | Prince Sugar Gyasi-Denteh';
+---
+
+<Layout title={title}>
+  <div class="projects-container">
+    <h1>Projects & Research</h1>
+    <p class="intro-text">A selection of significant academic and professional projects that demonstrate my engineering expertise.</p>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2>Molecular Design Framework for Industrial Refrigerants</h2>
+          <span class="project-date">Sep – Dec 2025</span>
+          <span class="project-location">BAM, Berlin</span>
+        </div>
+        <div class="project-content">
+          <p><strong>Overview:</strong> Designed and implemented a computer-aided molecular design framework using distributed evolutionary algorithms for optimising industrial refrigerant selection in heat pump systems.</p>
+          <p><strong>Key Achievements:</strong></p>
+          <ul>
+            <li>Built predictive property models using multilinear regression and machine learning (Joback's group contribution method)</li>
+            <li>Integrated cheminformatics pipelines (RDKit, PubChem, CAPE-OPEN)</li>
+            <li>Designed modular Python scripts interfacing with industrial thermodynamic engines</li>
+            <li>Conducted multi-objective optimisation studies for complex technical problems</li>
+          </ul>
+          <p><strong>Technologies:</strong> Python, DEAP, RDKit, Machine Learning, Thermodynamic Modelling</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2>PAC Production Facility Design</h2>
+          <span class="project-date">2025 – 2026</span>
+          <span class="project-location">KNUST, Kumasi</span>
+        </div>
+        <div class="project-content">
+          <p><strong>Overview:</strong> Final-year plant design project for a Poly-Aluminium Chloride (PAC) production facility from Ghanaian bauxite.</p>
+          <p><strong>Key Achievements:</strong></p>
+          <ul>
+            <li>Developed full Aspen Plus simulation of the production process</li>
+            <li>Created detailed Process Flow Diagrams (PFD)</li>
+            <li>Conducted economic evaluation and feasibility study</li>
+            <li>Applied process design and economics principles throughout</li>
+          </ul>
+          <p><strong>Technologies:</strong> Aspen Plus, Process Design, Economic Analysis</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2>Naphtha Cracking Kinetic Model</h2>
+          <span class="project-date">Oct 2024</span>
+          <span class="project-location">KNUST, Kumasi</span>
+        </div>
+        <div class="project-content">
+          <p><strong>Overview:</strong> Developed a comprehensive kinetic model for naphtha cracking applicable to industrial reactors.</p>
+          <p><strong>Key Achievements:</strong></p>
+          <ul>
+            <li>Modelled 22 distinct reactions in the cracking process</li>
+            <li>Applied mole and energy balance calculations across a Plug Flow Reactor (PFR)</li>
+            <li>Performed dimensional analysis to validate kinetic and thermodynamic data</li>
+            <li>Identified model deficiencies with targeted improvement proposals</li>
+          </ul>
+          <p><strong>Technologies:</strong> Reaction Engineering, Process Modelling, Thermodynamics</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2>VLE Modelling Using MATLAB</h2>
+          <span class="project-date">2024</span>
+          <span class="project-location">KNUST, Kumasi</span>
+        </div>
+        <div class="project-content">
+          <p><strong>Overview:</strong> Vapour-Liquid Equilibrium (VLE) modelling of binary mixtures using thermodynamic models.</p>
+          <p><strong>Key Achievements:</strong></p>
+          <ul>
+            <li>Implemented Margules, Van Laar, and Wilson thermodynamic models</li>
+            <li>Applied non-linear regression techniques for model parameters</li>
+            <li>Validated models against experimental data</li>
+          </ul>
+          <p><strong>Technologies:</strong> MATLAB, Thermodynamics, Non-linear Regression</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2>Brayton Cycle Simulation</h2>
+          <span class="project-date">2024</span>
+          <span class="project-location">KNUST, Kumasi</span>
+        </div>
+        <div class="project-content">
+          <p><strong>Overview:</strong> MATLAB-based thermodynamic modelling of methane combustion power generation systems.</p>
+          <p><strong>Key Achievements:</strong></p>
+          <ul>
+            <li>Modelled complete Brayton cycle thermodynamics</li>
+            <li>Optimised cycle efficiency and power output</li>
+            <li>Analyzed thermodynamic properties across cycle stages</li>
+          </ul>
+          <p><strong>Technologies:</strong> MATLAB, Thermodynamic Simulation, Power Systems</p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <div class="project-header">
+          <h2>Cocoa Processing Quality Control</h2>
+          <span class="project-date">Dec 2024 – Jan 2025</span>
+          <span class="project-location">Cocoa Touton, Tema</span>
+        </div>
+        <div class="project-content">
+          <p><strong>Overview:</strong> Industrial quality assurance and control in a large-scale cocoa processing facility.</p>
+          <p><strong>Key Achievements:</strong></p>
+          <ul>
+            <li>Conducted tri-hourly physicochemical testing (FFA, moisture, fat content)</li>
+            <li>Performed bean quality analysis and winnower analysis</li>
+            <li>Carried out microbial safety testing (Salmonella, coliform detection)</li>
+            <li>Ensured compliance with food safety standards</li>
+          </ul>
+          <p><strong>Technologies:</strong> QA/QC Protocols, Physicochemical Analysis, Microbial Testing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .intro-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-3xl);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-2xl);
+  }
+
+  .project-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .project-header {
+    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-md);
+    border-bottom: 2px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .project-header h2 {
+    margin: 0;
+    color: var(--color-primary);
+    font-size: var(--font-size-xl);
+  }
+
+  .project-date {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .project-location {
+    font-size: var(--font-size-sm);
+    color: var(--color-secondary);
+    font-weight: 500;
+  }
+
+  .project-content {
+    padding: var(--spacing-lg);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .project-content p {
+    margin-bottom: 0;
+  }
+
+  .project-content strong {
+    color: var(--color-text-primary);
+  }
+
+  .project-content ul {
+    margin-left: var(--spacing-lg);
+    margin-bottom: 0;
+  }
+
+  .project-content li {
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
