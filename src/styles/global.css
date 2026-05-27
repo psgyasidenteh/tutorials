@@ -14,13 +14,13 @@
   --color-secondary: #10b981;
   --color-accent: #f59e0b;
   
-  --color-bg: #ffffff;
-  --color-surface: #f9fafb;
-  --color-border: #e5e7eb;
+  --color-bg: #000000;
+  --color-surface: #373737;
+  --color-border: #4f4f4f;
   
-  --color-text-primary: #1f2937;
+  --color-text-primary: #e0e0e0;
   --color-text-secondary: #6b7280;
-  --color-text-muted: #9ca3af;
+  --color-text-muted: #848d9b;
   
   --color-success: #10b981;
   --color-error: #ef4444;
