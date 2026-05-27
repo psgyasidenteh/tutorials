@@ -309,12 +309,15 @@ footer {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background: rgba(59, 130, 246, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   padding: var(--spacing-3xl) var(--spacing-lg);
   border-radius: var(--radius-lg);
   margin-bottom: var(--spacing-3xl);
   text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
 
 .hero-content {
